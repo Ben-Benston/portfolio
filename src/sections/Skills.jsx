@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
 function Skills() {
@@ -26,16 +27,25 @@ function Skills() {
         "Blender"
     ];
 
+    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 500);
+
+    useEffect(() => {
+        const handleResize = () => setIsWideScreen(window.innerWidth > 500);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
     return (
         <div>
             <div className="flex justify-center mb-8">
-                <p className="text-5xl font-bold text-amber-600 bg-gradient-to-br from-amber-100 to-amber-300 px-6 py-2 rounded-xl shadow-md">
+                <p className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-amber-600 bg-gradient-to-br from-amber-100/75 to-amber-300/75 px-6 py-2 rounded-xl shadow-md backdrop-blur-sm mt-5">
                     Skills
                 </p>
             </div>
 
             <Marquee
-                gradient={true}
+                gradient={isWideScreen}
                 speed={40}
                 pauseOnHover
                 className="w-full flex items-center"

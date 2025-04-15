@@ -22,11 +22,11 @@ function Experience() {
             </div>
 
             <div className="flex flex-col md:grid md:grid-cols-2 items-center gap-6">
-                <div className="w-full max-w-md mx-auto">
+                <div className="w-full max-w-md mx-auto mt-[-5%] md:mt-0">
                     <Lottie animationData={workingAnimation} loop={true} className="xl:w-160 xl:h-160" />
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center mt-[-5%] md:mt-0">
                     <ExperienceCard duration="May 2024" role="Data Entry / Research Intern" company="Alpha MD" />
                     <ExperienceCard duration="Dec 2023" role="App Testing Intern" company="MapOut" />
                     <ExperienceCard duration="May 2023" role="Content Writing Intern" company="Team Everest" />
