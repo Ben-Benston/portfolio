@@ -1,5 +1,6 @@
 import Lottie from "lottie-react";
 import workingAnimation from "../../public/files/working.json";
+import Skills from "./Skills";
 
 function ExperienceCard({ duration, role, company }) {
     return (
@@ -31,6 +32,8 @@ function Experience() {
                     <ExperienceCard duration="May 2023" role="Content Writing Intern" company="Team Everest" />
                 </div>
             </div>
+
+            <Skills />
         </div>
     );
 }
