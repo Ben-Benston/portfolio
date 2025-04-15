@@ -1,11 +1,11 @@
-import Section1 from "./Section1";
-import Section2 from "./Section2";
+import Experience from "./Experience";
+import NameAbout from "./NameAbout";
 
 function Home() {
     return (
         <div>
-            <Section1 />
-            <Section2 />
+            <NameAbout />
+            <Experience />
         </div>
     )
 }

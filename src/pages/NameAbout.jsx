@@ -1,7 +1,7 @@
 import { BsDownload } from "react-icons/bs";
 import { RiContactsLine } from "react-icons/ri";
 
-function Section1() {
+function NameAbout() {
     return (
         <div className="min-h-screen bg-[url('/images/bg.svg')] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row items-center justify-center px-4 py-10">
             {/* Left Section */}
@@ -48,4 +48,4 @@ function Section1() {
     );
 }
 
-export default Section1;
+export default NameAbout;
