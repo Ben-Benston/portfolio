@@ -24,7 +24,7 @@ function Home() {
             </div>
             <div className="w-[50vw] h-screen flex justify-center items-end overflow-hidden">
                 <img
-                    src="../../public/images/self.png"
+                    src="/images/self.png"
                     alt="Burhanuddin Nasikwala"
                     className="object-contain max-w-full max-h-full"
                 />
