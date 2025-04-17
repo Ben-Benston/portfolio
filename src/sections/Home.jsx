@@ -1,6 +1,7 @@
 import Experience from "./Experience";
 import NameAbout from "./NameAbout";
 import { Analytics } from "@vercel/analytics/react"
+import Project from "./Project";
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
             <Analytics />
             <NameAbout />
             <Experience />
+            <Project />
         </div>
     )
 }
