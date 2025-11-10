@@ -2,6 +2,13 @@ import { BsDownload } from "react-icons/bs";
 import { RiContactsLine } from "react-icons/ri";
 
 function NameAbout() {
+    const handleScrollToContact = () => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="min-h-screen bg-[url('/images/bg.svg')] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row items-center justify-center px-4 py-10">
             {/* Left Section */}
@@ -17,11 +24,13 @@ function NameAbout() {
                     </p>
 
                     <p className="text-sm sm:text-base 2xl:text-xl mt-5 font-bold text-gray-700 text-justify">
-                        I am a CS student at KC College. As a passionate programmer, I specialize in web development with skills in Python, JavaScript, HTML, CSS, and Firebase, crafting various projects. I'm currently learning React and Tailwind CSS to build modern, responsive interfaces.
+                        Aspiring Full-Stack Developer with a major in Computer Science and hands-on experience in building scalable web
+                        applications and leading projects. Skilled in developing responsive front-end interfaces and efficient back-end systems
+                        using modern frameworks. Proven in analysing large datasets using Excel, Power BI and SQL to drive efficiency.
                     </p>
 
                     <div className="mt-5 flex flex-col sm:flex-row gap-3 w-full justify-center md:justify-start">
-                        <button className="flex items-center justify-center gap-2 bg-transparent text-black border-amber-500 border-2 font-bold text-lg sm:text-xl md:text-base lg:text-xl 2xl:text-3xl px-4 py-3 rounded-3xl hover:bg-amber-50 hover:translate-y-[5%] hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer">
+                        <button onClick={handleScrollToContact} className="flex items-center justify-center gap-2 bg-transparent text-black border-amber-500 border-2 font-bold text-lg sm:text-xl md:text-base lg:text-xl 2xl:text-3xl px-4 py-3 rounded-3xl hover:bg-amber-50 hover:translate-y-[5%] hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer">
                             CONTACT ME <RiContactsLine />
                         </button>
                         <a

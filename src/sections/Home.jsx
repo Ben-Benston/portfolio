@@ -2,6 +2,8 @@ import Experience from "./Experience";
 import NameAbout from "./NameAbout";
 import { Analytics } from "@vercel/analytics/react"
 import Project from "./Project";
+import { Contact } from "./Contact";
+import Education from "./Education";
 
 function Home() {
     return (
@@ -10,6 +12,8 @@ function Home() {
             <NameAbout />
             <Experience />
             <Project />
+            <Education />
+            <Contact />
         </div>
     )
 }
